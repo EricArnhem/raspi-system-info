@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "name": "system-info",
+  "version": "1.0.0",
+  "description": "Script used to get system informations like uptime, cpu temp, memory usage...",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
