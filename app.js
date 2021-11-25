@@ -83,8 +83,9 @@ const displayResults = async () => {
 
   // Uptime
   const piUptime = Math.round(os.uptime() / 60);
-  const piUptimeInHours = (Math.round((piUptime / 60) * 100) / 100).toFixed(2);
-  console.log(chalk.cyan.bold('Uptime:'), `${piUptime}min (${piUptimeInHours}h)`);
+  const piUptimeInHours = (Math.round((piUptime / 60) * 100) / 100).toFixed(1);
+  const piUptimeInDays = (Math.round((piUptimeInHours / 24) * 100) / 100).toFixed(1);
+  console.log(chalk.cyan.bold('Uptime:'), `${piUptime}min (${piUptimeInHours}h) (${piUptimeInDays}d)`);
   
   // CPU temperature
   const cpuTemp = await getCpuTemp();
